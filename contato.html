@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | CoreCode</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        @media (min-width: 769px) {
+            #menu-mobile, 
+            .menu-toggle {
+                display: none !important;
+                visibility: hidden !important;
+                opacity: 0 !important;
+                pointer-events: none !important;
+            }
+        }
+    </style>
+    
+    <link rel="icon" type="image/png" href="img/icone_logo.png">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo transparente.png" alt="Ícone Corecode" class="logo-img">
+                </a>
+            </div>
+
+          <div class="menu-toggle" onclick="abrirMenu()" style="cursor: pointer; z-index: 999999;">
+    <svg viewBox="0 0 24 24" width="35" height="35" stroke="#00FFFF" stroke-width="2.5" fill="none">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+</div>
+
+<nav id="nav-links" class="nav-movel">
+    <a href="index.html">Home</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="portifolio.html">Portfólio</a>
+    <a href="contato.html" class="btn-contato-nav">Contato</a>
+</nav>
+
+<script>
+function abrirMenu() {
+    // Certifique-se de que o ID aqui é o mesmo do seu <nav>
+    const menu = document.getElementById("nav-links"); 
+    menu.classList.toggle("menu-aberto");
+}
+</script>
+
+        
+    </header>
+
+
+    <section class="contato-hero">
+        <div class="container">
+            <h1 class="revelar">Vamos iniciar uma <br> <span class="destaque">nova conexão.</span></h1>
+            <p class="revelar">Esqueça os formulários chatos. Preencha a frase abaixo e conte para nós o que você tem em mente.</p>
+        </div>
+    </section>
+
+    <section class="contato-interativo revelar">
+    <div class="container">
+        <div class="form-manifesto">
+            <form action="https://formspree.io/f/xzdokbab" method="POST">
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+
+                <p class="frase-interativa">
+                    Olá, equipe CoreCode! Meu nome é
+                    <input type="text" name="Nome_do_Cliente" class="input-linha" placeholder="seu nome" required>. 
+                    
+                    Eu estou buscando desenvolver 
+                    <select name="Solucao_Desejada" class="input-linha select-linha" required>
+                        <option value="" disabled selected>escolha uma solução</option>
+                        <option value="landing_page">uma Landing Page</option>
+                        <option value="sistema_sob_medida">um Sistema sob medida</option>
+                        <option value="ui_ux">um UI/UX Design</option>
+                        <option value="outro">um Outro Projeto</option>
+                    </select> 
+                    
+                    para escalar o meu negócio. Meu orçamento planejado é 
+                    <select name="Orcamento" class="input-linha select-linha" required>
+                        <option value="" disabled selected>selecione um valor</option>
+                        <option value="a_definir">ainda a definir</option>
+                        <option value="ate_5k">até R$ 2.500</option>
+                        <option value="5k_10k">de R$ 2.500 a R$ 5.000</option>
+                        <option value="mais_10k">mais de R$ 5.000</option>
+                    </select>. 
+                    
+                    Vocês podem entrar em contato comigo pelo e-mail 
+                    <input type="email" name="Email" class="input-linha" placeholder="seu@email.com" required> 
+                    
+                    ou me chamar no WhatsApp pelo número 
+                    <input type="tel" name="WhatsApp" class="input-linha" placeholder="(00) 00000-0000">.
+                </p>
+                
+                <div class="form-acoes">
+                    <button type="submit" class="btn-enviar-neon">Transmitir Mensagem</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+    </section>
+
+     <footer class="footer">
+        <div class="container">
+            <div class="footer-layout">
+                <div class="footer-side left-side">
+                    <div class="footer-column">
+                        <h3>Navegação</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="servicos.html">Serviços</a></li>
+                            <li><a href="portifolio.html">Portfólio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contato</h3>
+                        <ul>
+                            <li><a href="https://wa.me/5551993028773" target="_blank">WhatsApp</a></li>
+                            <li><a href="mailto:contato@somoscorecode.com.br">E-mail</a></li>
+                            <li><a href="https://instagram.com/corecode.tech" target="_blank">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-center">
+                    <a href="#" class="footer-logo" title="Voltar ao topo">
+                        <img src="img/logo transparente.png" alt="CoreCode Logo" class="footer-logo-img">
+                    </a>
+                </div>
+                <div class="footer-side right-side">
+                    <div class="footer-column">
+                        <h3>Serviços</h3>
+                        <ul>
+                            <li><a href="servicos.html">Landing Pages</a></li>
+                            <li><a href="servicos.html">Desenvolvimento Web</a></li>
+                            <li><a href="servicos.html">Sistemas sob Medida</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Termos de Uso</a></li>
+                            <li><a href="#">Políticas de Privacidade</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CoreCode. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5551993028773" target="_blank" class="wpp-flutuante" title="Fale conosco no WhatsApp">
+    <img src="img/wpp.png" alt="WhatsApp" class="wpp-icon">
+</a>
+
+    <script>
+        const observador = new IntersectionObserver((entradas) => {
+            entradas.forEach((entrada) => {
+                if (entrada.isIntersecting) {
+                    entrada.target.classList.add('mostrar');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        const elementosParaAnimar = document.querySelectorAll('.revelar');
+        elementosParaAnimar.forEach((elemento) => observador.observe(elemento));
+    </script>
+
+    <script>
+    const form = document.querySelector('.form-manifesto form');
+
+    form.addEventListener('submit', async function(event) {
+        // 1. Impede que a página recarregue ou vá para o site do Formspree
+        event.preventDefault(); 
+        
+        // Muda o texto do botão para mostrar que está enviando
+        const btn = form.querySelector('button[type="submit"]');
+        const textoOriginal = btn.innerHTML;
+        btn.innerHTML = 'Transmitindo...';
+        btn.disabled = true;
+
+        // Pega os dados do formulário
+        const data = new FormData(event.target);
+
+        try {
+            // 2. Envia os dados por baixo dos panos
+            const response = await fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            // 3. Se deu tudo certo, redireciona para a Home!
+            if (response.ok) {
+                // Você pode colocar um alerta se quiser: alert("Mensagem enviada com sucesso!");
+                window.location.href = 'index.html'; // Redireciona para o index
+            } else {
+                alert("Ops! Ocorreu um erro ao enviar. Tente novamente.");
+                btn.innerHTML = textoOriginal;
+                btn.disabled = false;
+            }
+        } catch (error) {
+            alert("Erro de conexão. Verifique sua internet.");
+            btn.innerHTML = textoOriginal;
+            btn.disabled = false;
+        }
+    });
+</script>
+
+</body>
+</html>

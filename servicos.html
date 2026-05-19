@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços | CoreCode</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        @media (min-width: 769px) {
+            #menu-mobile, 
+            .menu-toggle {
+                display: none !important;
+                visibility: hidden !important;
+                opacity: 0 !important;
+                pointer-events: none !important;
+            }
+        }
+    </style>
+    
+    <link rel="icon" type="image/png" href="img/icone_logo.png">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo transparente.png" alt="Ícone Corecode" class="logo-img">
+                </a>
+            </div>
+
+          <div class="menu-toggle" onclick="abrirMenu()" style="cursor: pointer; z-index: 999999;">
+    <svg viewBox="0 0 24 24" width="35" height="35" stroke="#00FFFF" stroke-width="2.5" fill="none">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+</div>
+
+<nav id="nav-links" class="nav-movel">
+    <a href="index.html">Home</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="portifolio.html">Portfólio</a>
+    <a href="contato.html" class="btn-contato-nav">Contato</a>
+</nav>
+
+<script>
+function abrirMenu() {
+    // Certifique-se de que o ID aqui é o mesmo do seu <nav>
+    const menu = document.getElementById("nav-links"); 
+    menu.classList.toggle("menu-aberto");
+}
+</script>
+
+        
+    </header>
+
+    <section class="servicos-hero">
+        <div class="container">
+            <h1 class="revelar">Soluções digitais de <br> <span class="destaque">alta performance.</span></h1>
+            <p class="revelar">Desenvolvemos produtos sob medida para marcas que exigem excelência, velocidade e design impecável.</p>
+        </div>
+    </section>
+
+    <section class="servicos-lista">
+        <div class="container">
+            
+            <div class="servico-item revelar">
+                <div class="servico-icone">01</div>
+                <div class="servico-conteudo">
+                    <h2>Landing Pages de <span class="destaque">Conversão</span></h2>
+                    <p>Páginas de vendas e captura de leads projetadas com gatilhos mentais visuais, carregamento ultrarrápido e foco absoluto em transformar visitantes em clientes reais. Ideal para lançamentos, campanhas de tráfego pago e captação agressiva.</p>
+                    <ul class="servico-features">
+                        <li>Design Exclusivo e Focado em UX</li>
+                        <li>Otimização Extrema de Velocidade</li>
+                        <li>Integração com CRMs e Pixel</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="servico-item revelar">
+                <div class="servico-icone">02</div>
+                <div class="servico-conteudo">
+                    <h2>Websites <span class="destaque">Corporativos</span></h2>
+                    <p>O seu site é a sede da sua empresa na internet. Construímos sites institucionais robustos, com navegação fluida, painel administrativo personalizado e SEO técnico embarcado para dominar as buscas do Google.</p>
+                    <ul class="servico-features">
+                        <li>Painel de Controle Próprio</li>
+                        <li>Estrutura Blindada para SEO</li>
+                        <li>Responsividade Perfeita (Mobile First)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="servico-item revelar">
+                <div class="servico-icone">03</div>
+                <div class="servico-conteudo">
+                    <h2>Sistemas Web <span class="destaque">Sob Medida</span></h2>
+                    <p>Quando as plataformas prontas não atendem mais o seu nível de exigência. Desenvolvemos dashboards, portais de clientes, sistemas de gestão e aplicações web completas do zero, escaláveis e seguras.</p>
+                    <ul class="servico-features">
+                        <li>Arquitetura Escalável</li>
+                        <li>Bancos de Dados Seguros</li>
+                        <li>Automatização de Processos Internos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="servico-item revelar">
+                <div class="servico-icone">04</div>
+                <div class="servico-conteudo">
+                    <h2>UI/UX <span class="destaque">Design</span></h2>
+                    <p>Criamos interfaces centradas no usuário que unem estética premium e usabilidade intuitiva. Cada detalhe é planejado para maximizar a conversão e proporcionar uma jornada de navegação impecável.</p>
+                    <ul class="servico-features">
+                        <li>Interfaces Intuitivas</li>
+                        <li>Design System Exclusivo</li>
+                        <li>Experiência de Usuário Fluida (UX)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="servico-item revelar">
+                <div class="servico-icone">05</div>
+                <div class="servico-conteudo">
+                    <h2>Alta <span class="destaque">Performance</span></h2>
+                    <p>Em projetos de alto nível, cada milissegundo conta. Desenvolvemos com arquitetura de ponta e código limpo, garantindo carregamento ultrarrápido, excelente SEO e estabilidade total para o seu site.</p>
+                    <ul class="servico-features">
+                        <li>Carregamento Ultrarrápido</li>
+                        <li>Otimização de SEO Técnico</li>
+                        <li>Código Limpo e Moderno</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="servico-item revelar">
+                <div class="servico-icone">06</div>
+                <div class="servico-conteudo">
+                    <h2>Automação e <span class="destaque">APIs</span></h2>
+                    <p>Elimine o trabalho manual e os processos que travam o seu crescimento. Integramos suas ferramentas e sistemas através de APIs seguras, fazendo o seu negócio rodar no piloto automático.</p>
+                    <ul class="servico-features">
+                        <li>Sincronização de Dados</li>
+                        <li>Conexão com Sistemas Externos</li>
+                        <li>Fluxos de Trabalho Inteligentes</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta-section revelar">
+        <div class="container cta-box">
+            <h2>Pronto para tirar o seu projeto do papel?</h2>
+            <p>Fale com nossa equipe de especialistas e descubra como podemos acelerar o seu negócio.</p>
+            <a href="contato.html" class="btn-primary">Solicitar Orçamento</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-layout">
+                <div class="footer-side left-side">
+                    <div class="footer-column">
+                        <h3>Navegação</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="servicos.html">Serviços</a></li>
+                            <li><a href="portifolio.html">Portfólio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contato</h3>
+                        <ul>
+                            <li><a href="https://wa.me/5551993028773" target="_blank">WhatsApp</a></li>
+                            <li><a href="mailto:contato@somoscorecode.com.br">E-mail</a></li>
+                            <li><a href="https://instagram.com/corecode.tech" target="_blank">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-center">
+                    <a href="#" class="footer-logo" title="Voltar ao topo">
+                        <img src="img/logo transparente.png" alt="CoreCode Logo" class="footer-logo-img">
+                    </a>
+                </div>
+                <div class="footer-side right-side">
+                    <div class="footer-column">
+                        <h3>Serviços</h3>
+                        <ul>
+                            <li><a href="servicos.html">Landing Pages</a></li>
+                            <li><a href="servicos.html">Desenvolvimento Web</a></li>
+                            <li><a href="servicos.html">Sistemas sob Medida</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Termos de Uso</a></li>
+                            <li><a href="#">Políticas de Privacidade</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CoreCode. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const observador = new IntersectionObserver((entradas) => {
+            entradas.forEach((entrada) => {
+                if (entrada.isIntersecting) {
+                    entrada.target.classList.add('mostrar');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        const elementosParaAnimar = document.querySelectorAll('.revelar, .revelar-esquerda');
+        elementosParaAnimar.forEach((elemento) => observador.observe(elemento));
+    </script>
+</body>
+</html>

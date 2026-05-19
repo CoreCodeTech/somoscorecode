@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corecode | Soluções Digitais de Alto Impacto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @media (min-width: 769px) {
+            #menu-mobile, 
+            .menu-toggle {
+                display: none !important;
+                visibility: hidden !important;
+                opacity: 0 !important;
+                pointer-events: none !important;
+            }
+        }
+    </style>
+
+    <link rel="icon" type="image/png" href="img/icone_logo.png">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo transparente.png" alt="Ícone Corecode" class="logo-img">
+                </a>
+            </div>
+
+          <div class="menu-toggle" onclick="abrirMenu()" style="cursor: pointer; z-index: 999999;">
+    <svg viewBox="0 0 24 24" width="35" height="35" stroke="#00FFFF" stroke-width="2.5" fill="none">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+</div>
+
+<nav id="nav-links" class="nav-movel">
+    <a href="index.html">Home</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="portifolio.html">Portfólio</a>
+    <a href="contato.html" class="btn-contato-nav">Contato</a>
+</nav>
+
+<script>
+function abrirMenu() {
+    // Certifique-se de que o ID aqui é o mesmo do seu <nav>
+    const menu = document.getElementById("nav-links"); 
+    menu.classList.toggle("menu-aberto");
+}
+</script>
+
+        
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Transformamos ideias em <span class="destaque">experiências digitais</span></h1>
+                <p>Desenvolvimento do seu site em código puro, performance extrema e design responsivo. Criamos o motor visual que faz o seu negócio rodar mais rápido na web.</p>
+                <a href="servicos.html" class="btn-primary">Conhecer Soluções</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="porque-corecode">
+    <div class="container">
+        <h2 class="revelar">Por que a <span>CoreCode?</span></h2> 
+        <p class="subtitle revelar">Entregamos o que agências comuns não conseguem alcançar.</p>
+            
+            <div class="porque-grid">
+                <div class="porque-card revelar-esquerda">
+                    <div class="porque-icon-area">
+                        <img src="img/icone_logo.png" alt="visão" class="porque-img">
+                    </div>
+                    <div class="porque-info">
+                        <h3>Visão de futuro</h3>
+                        <p>Tecnologias modernas para manter seu projeto sempre atualizado.</p>
+                    </div>
+                </div>
+                <div class="porque-card revelar-esquerda">
+                    <div class="porque-icon-area">
+                        <img src="img/icone_logo.png" alt="alto desempenho" class="porque-img">
+                    </div>
+                    <div class="porque-info">
+                        <h3>Alto desempenho</h3>
+                        <p>Código leve e otimizado para a máxima velocidade e fluidez.</p>
+                    </div>
+                </div>
+                <div class="porque-card revelar-esquerda">
+                    <div class="porque-icon-area">
+                        <img src="img/icone_logo.png" alt="foco no detalhe" class="porque-img">
+                    </div>
+                    <div class="porque-info">
+                        <h3>Foco no detalhe</h3>
+                        <p>Cuidado rigorozo em cada parte visual e técnica da plataforma.</p>
+                    </div>
+                </div>
+                <div class="porque-card revelar-esquerda">
+                    <div class="porque-icon-area">
+                        <img src="img/icone_logo.png" alt="prazos inteligentes" class="porque-img">
+                    </div>
+                    <div class="porque-info">
+                        <h3>Prazos inteligentes</h3>
+                        <p>Entregas dinâmicas e no prazo, sem perder a qualidade.</p>
+                    </div>
+                </div>
+                <div class="porque-card revelar-esquerda">
+                    <div class="porque-icon-area">
+                        <img src="img/icone_logo.png" alt="parceria real" class="porque-img">
+                    </div>
+                    <div class="porque-info">
+                        <h3>Parceria real</h3>
+                        <p>Desenvolvimento lado a lado com você, do início ao fim.</p>
+                    </div>
+                </div>
+                <div class="porque-card revelar-esquerda">
+                    <div class="porque-icon-area">
+                        <img src="img/icone_logo.png" alt="solidez" class="porque-img">
+                    </div>
+                    <div class="porque-info">
+                        <h3>Solidez</h3>
+                        <p>Estrutura preparada para crescer com o seu negócio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="servicos">
+        <div class="container">
+            <h2 class="revelar">Nossa <span>Especialidade</span></h2>
+            <p class="servicos-subtitle revelar">Soluções completas para transformar seu pensamento em realidade</p>
+            
+            <div class="servicos-grid">
+                <div class="servico-card revelar-esquerda">
+                    <h3>Landing Pages</h3>
+                    <p>Páginas de alta conversão otimizadas para transformar visitantes em clientes reais.</p>
+                </div>
+                <div class="servico-card revelar-esquerda">
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Soluções web modernas, responsivas com tecnologia de ponta.</p>
+                </div>
+                 <div class="servico-card revelar-esquerda">
+                    <h3>Sistemas sob Medida</h3>
+                    <p>Desenvolvimento de plataformas personalizadas para a necessidade do seu negócio.</p>
+                </div>
+                 <div class="servico-card revelar-esquerda">
+                    <h3>UI/UX Design</h3>
+                    <p>Unindo usabilidade intuitiva e excelência estética em cada detalhe.</p>
+                </div>
+                <div class="servico-card revelar-esquerda">
+                    <h3>Performance</h3>
+                    <p>Código otimizado e alta velocidade para uma experiência sem interrupções.</p>
+                </div>
+                <div class="servico-card revelar-esquerda">
+                    <h3>Automação e Integrações (APIs)</h3>
+                    <p>Integração de sistemas e APIs para fazer o seu negócio rodar no piloto automático, sem esforço manual.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   <footer class="footer">
+        <div class="container">
+            <div class="footer-layout">
+                
+                <div class="footer-side left-side">
+                    <div class="footer-column">
+                        <h3>Navegação</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="servicos.html">Serviços</a></li>
+                            <li><a href="portifolio.html">Portfólio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contato</h3>
+                        <ul>
+                            <li><a href="https://wa.me/5551993028773" target="_blank">WhatsApp</a></li>
+                            <li><a href="mailto:contato@somoscorecode.com.br">E-mail</a></li>
+                            <li><a href="https://instagram.com/corecode.tech" target="_blank">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-center">
+                    <a href="#" class="footer-logo" title="Voltar ao topo">
+                        <img src="img/logo transparente.png" alt="Corecode Logo" class="footer-logo-img">
+                    </a>
+                </div> <div class="footer-side right-side">
+                    <div class="footer-column">
+                        <h3>Serviços</h3>
+                        <ul>
+                            <li><a href="servicos.html">Landing Pages</a></li>
+                            <li><a href="servicos.html">Desenvolvimento Web</a></li>
+                            <li><a href="servicos.html">Sistemas sob Medida</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Termos de Uso</a></li>
+                            <li><a href="#">Políticas de Privacidade</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 CoreCode. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Cria o vigilante
+        const observador = new IntersectionObserver((entradas) => {
+            entradas.forEach((entrada) => {
+                // Se o elemento entrou na tela
+                if (entrada.isIntersecting) {
+                    entrada.target.classList.add('mostrar'); // Adiciona a animação
+                }
+            });
+        }, {
+            threshold: 0.1 // Só aciona quando 10% do elemento já estiver visível
+        });
+
+        // Pega todos os elementos que têm a classe 'revelar' e 'revelar-esquerda' e manda o vigilante observar
+        const elementosParaAnimar = document.querySelectorAll('.revelar, .revelar-esquerda');
+        elementosParaAnimar.forEach((elemento) => observador.observe(elemento));
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</body>
+</html>
+</body>
+    

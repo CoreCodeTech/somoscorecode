@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | CoreCode</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        @media (min-width: 769px) {
+            #menu-mobile, 
+            .menu-toggle {
+                display: none !important;
+                visibility: hidden !important;
+                opacity: 0 !important;
+                pointer-events: none !important;
+            }
+        }
+    </style>
+
+    <link rel="icon" type="image/png" href="img/icone_logo.png">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo transparente.png" alt="Ícone Corecode" class="logo-img">
+                </a>
+            </div>
+
+          <div class="menu-toggle" onclick="abrirMenu()" style="cursor: pointer; z-index: 999999;">
+    <svg viewBox="0 0 24 24" width="35" height="35" stroke="#00FFFF" stroke-width="2.5" fill="none">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+</div>
+
+<nav id="nav-links" class="nav-movel">
+    <a href="index.html">Home</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="portifolio.html">Portfólio</a>
+    <a href="contato.html" class="btn-contato-nav">Contato</a>
+</nav>
+
+<script>
+function abrirMenu() {
+    // Certifique-se de que o ID aqui é o mesmo do seu <nav>
+    const menu = document.getElementById("nav-links"); 
+    menu.classList.toggle("menu-aberto");
+}
+</script>
+
+        
+    </header>
+
+
+    <section class="portfolio-hero">
+        <div class="container">
+            <h1 class="revelar">Projetos que definem <br> <span class="destaque">o futuro.</span></h1>
+            <p class="revelar">Explore alguns dos nossos trabalhos recentes e veja como transformamos desafios complexos em interfaces excepcionais.</p>
+        </div>
+    </section>
+
+    <section class="portfolio-galeria">
+        <div class="container portfolio-grid">
+            
+            <div class="portfolio-card revelar">
+                <div class="portfolio-img-wrapper">
+                    <img src="img/projeto_1.png" alt="Projeto 1" class="portfolio-img">
+                </div>
+                <div class="portfolio-info">
+                    <div class="tags">
+                        <span class="tag">Landing Page</span>
+                        <span class="tag">Alta Conversão</span>
+                    </div>
+                    <h3>Lançamento Tech</h3>
+                    <p>Página de vendas desenvolvida para o lançamento de um infoproduto da área de tecnologia, com carregamento em menos de 1 segundo.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-card revelar">
+                <div class="portfolio-img-wrapper">
+                    <img src="img/projeto_2.png" alt="Projeto 2" class="portfolio-img">
+                </div>
+                <div class="portfolio-info">
+                    <div class="tags">
+                        <span class="tag">E-commerce</span>
+                        <span class="tag">Design Premium</span>
+                    </div>
+                    <h3>Boutique Elegance</h3>
+                    <p>Loja virtual focada em experiência do usuário (UX), com vitrine imersiva e checkout totalmente transparente e otimizado.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-card revelar">
+                <div class="portfolio-img-wrapper">
+                    <img src="img/projeto_3.png" alt="Projeto 3" class="portfolio-img">
+                </div>
+                <div class="portfolio-info">
+                    <div class="tags">
+                        <span class="tag">Sistema Web</span>
+                        <span class="tag">Dashboard</span>
+                    </div>
+                    <h3>Gestão Pro</h3>
+                    <p>Sistema interno de gestão financeira com painéis de controle em tempo real, geração de relatórios e arquitetura escalável.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-card revelar">
+                <div class="portfolio-img-wrapper">
+                    <img src="img/projeto_4.png" alt="Projeto 4" class="portfolio-img">
+                </div>
+                <div class="portfolio-info">
+                    <div class="tags">
+                        <span class="tag">Institucional</span>
+                        <span class="tag">SEO</span>
+                    </div>
+                    <h3>Advocacia Prime</h3>
+                    <p>Website corporativo blindado para SEO, posicionando o escritório na primeira página do Google para sua região de atuação.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta-section revelar">
+        <div class="container cta-box">
+            <h2>Gostou do que viu?</h2>
+            <p>O próximo case de sucesso pode ser a sua empresa. Vamos conversar sobre as suas ideias.</p>
+            <a href="contato.html" class="btn-primary">Iniciar Meu Projeto</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-layout">
+                <div class="footer-side left-side">
+                    <div class="footer-column">
+                        <h3>Navegação</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="servicos.html">Serviços</a></li>
+                            <li><a href="portifolio.html">Portfólio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contato</h3>
+                        <ul>
+                            <li><a href="https://wa.me/5551993028773" target="_blank">WhatsApp</a></li>
+                            <li><a href="mailto:contato@somoscorecode.com.br">E-mail</a></li>
+                            <li><a href="https://instagram.com/corecode.tech" target="_blank">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-center">
+                    <a href="index.html" class="footer-logo" title="Voltar ao topo">
+                        <img src="img/logo transparente.png" alt="CoreCode Logo" class="footer-logo-img">
+                    </a>
+                </div>
+                <div class="footer-side right-side">
+                    <div class="footer-column">
+                        <h3>Serviços</h3>
+                        <ul>
+                            <li><a href="servicos.html">Landing Pages</a></li>
+                            <li><a href="servicos.html">Desenvolvimento Web</a></li>
+                            <li><a href="servicos.html">Sistemas sob Medida</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Termos de Uso</a></li>
+                            <li><a href="#">Políticas de Privacidade</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CoreCode. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const observador = new IntersectionObserver((entradas) => {
+            entradas.forEach((entrada) => {
+                if (entrada.isIntersecting) {
+                    entrada.target.classList.add('mostrar');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        const elementosParaAnimar = document.querySelectorAll('.revelar, .revelar-esquerda');
+        elementosParaAnimar.forEach((elemento) => observador.observe(elemento));
+    </script>
+</body>
+</html>
